@@ -33,13 +33,14 @@ header {
 .contact-info {
     display: flex;
     gap: 40px; /* Space between contact info items */
-    padding-left: 40px;
+    padding-left: 33px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .social-icons {
     display: flex;
     gap: 10px; /* Space between social icons */
+    padding-right: 22px;
 }
 
 .social-icons img {
@@ -56,12 +57,13 @@ header {
 .college-logo {
     max-height: 80px;
     margin: 0 20px; /* Space around the logos */
+    padding-left: 10px;
 }
 
 .jis-logo{
     max-height: 80px;
     margin: 0 20px;
-    padding-left: 970px;
+    padding-left: 945px;
 }
 
 nav {
@@ -152,6 +154,7 @@ nav a:hover {
     font-size: 2em;
     margin-bottom: 10px;
     z-index: 3;
+    color: #b83ac3;
     
 }
 
@@ -164,7 +167,7 @@ nav a:hover {
 
 .container h2 {
     font-size: 1.6em;
-    
+    color: #cfd11d;
 }
 
 .course-brochure-button {
