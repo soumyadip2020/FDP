@@ -1,20 +1,3 @@
-// Add smooth scrolling to navbar links
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        const targetId = this.getAttribute('href').substring(1); // Get the target element ID
-        const targetElement = document.getElementById(targetId);
-
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop,
-                behavior: 'smooth'
-            });
-        }
-    });
-});
-
 const typedTextSpan = document.getElementById("typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
@@ -51,3 +34,37 @@ function eraseText() {
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load
     if (textArray.length) setTimeout(typeText, newTextDelay + 250); // added a slight delay before the typing animation starts
 });
+
+const form = document.getElementById('contactForm');
+const thankYou = document.getElementById('thank-you');
+
+// Form Section 
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const fullName = document.getElementById('fullName').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    const scriptURL = 'YOUR_GOOGLE_APPS_SCRIPT_URL'; // **REPLACE THIS**
+
+    fetch(scriptURL, {
+        method: 'POST',
+        body: JSON.stringify({ fullName, email, message }),
+        headers: { 'Content-Type': 'application/json' }
+    })
+    .then(response => {
+        if (response.ok) {
+            form.style.display = 'none';
+            thankYou.style.display = 'block';
+        } else {
+            console.error('Error submitting form:', response.status);
+            alert("An error occurred while submitting the form. Please try again later.");
+        }
+    })
+    .catch(error => {
+        console.error('Error submitting form:', error);
+        alert("An error occurred while submitting the form. Please try again later.");
+    });
+});;

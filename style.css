@@ -93,7 +93,7 @@ nav a {
     padding-right: 7px;
     transition: background-colr 0.5s; /* Smooth transition for hover effect */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 22px;
+    font-size: 19.5px;
 }
 
 nav a:hover {
@@ -106,6 +106,7 @@ nav a:hover {
     background-color: #ffffff;
     position: relative;
     overflow: hidden;
+    
 }
 
 .department-heading h2 {
@@ -116,6 +117,7 @@ nav a:hover {
     cursor: pointer;
     white-space: nowrap;
     display: inline-block;
+    text-align: center;
 }
 
 .department-heading h2:hover {
@@ -154,20 +156,23 @@ nav a:hover {
     font-size: 2em;
     margin-bottom: 10px;
     z-index: 3;
-    color: #b83ac3;
-    
+    color: #c13ecd;
+    text-shadow: 3px 3px 6px rgba(183, 35, 139, 0.7);
+    font-style: italic;
 }
 
 .bold-text {
     font-weight: bold;
     padding-bottom: 19px;
     padding-top: 19px;
-    font-size: 1.3em;
+    font-size: 1.6em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .container h2 {
-    font-size: 1.6em;
+    font-size: 1.9em;
     color: #cfd11d;
+    text-shadow: 2px 2px 4px rgba(200, 221, 44, 0.5) 
 }
 
 .course-brochure-button {
@@ -197,7 +202,9 @@ nav a:hover {
 .attendees-section {
     margin-top: 40px;
     text-align: center; /* Align text to the center in this section */
- 
+    border: 3px solid #eea9a9;
+    border-radius: 90px;
+    box-shadow: 0 0 40px rgba(186, 21, 21, 0.1);
 }
 
 .attendees-section h3 {
@@ -205,84 +212,186 @@ nav a:hover {
     margin-bottom: 10px;
     text-align: center;
     color:  #00b3ff;
+    padding-top: 25px;
+    text-shadow: 2px 2px 4px rgba(13, 42, 188, 0.5);
 }
 
 .attendees-section p {
     line-height: 1.6;
     font-size: 1.2em;
     text-align: justify;
-    margin-left: 40px;
-    margin-right: 80px;
+    margin-left: 45px;
+    margin-right: 53px;
+    padding-bottom: 38px;
+   
 }
 
-.application-details {
+.attendees-section h5 {
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 41px;
+    color: lightseagreen;
+    text-shadow: 2px 2px 4px rgba(35, 166, 184, 0.5);
+    font-weight: 800;
+    font-style: italic;
+}
+
+ .application-details {
     display: flex;
     flex-direction: column; /* Arrange sections vertically */
     align-items: center; /* Center horizontally */
     gap: 20px; /* Space between sections */
     margin-top: 40px; /* Space from the previous content */
+    padding-right: 80px;
 }
-
-.how-to-apply, .venue-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center content horizontally in each section */
-    text-align: center;
-    padding: 20px;
-    background-color: #ffffff; /* White background for boxes */
-}
-
-.how-to-apply h3, .venue-details h3 {
+.how-to-apply h3 {
     font-weight: bold;
     margin-bottom: 10px;
+    text-align: center;
+    color: #00b3ff;
+    font-size: 1.7em;
+    text-shadow: 2px 2px 4px rgba(13, 42, 188, 0.5);
 }
-
+.how-to-apply p {
+    font-size: 1.5em;
+    color: #e41d1d;
+    font-weight: 500;
+}
 .registration-info {
     display: flex;
     justify-content: center; /* Center the boxes horizontally */
     gap: 20px;
     margin-top: 20px;
     width: 100%;
+    background: #dce8dbe6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 100%; 
+    margin: 20px;
 }
-
-.fee-box, .process-box, .venue-box {
+.fee-box {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center content horizontally */
     text-align: center;  /* Center text within elements */
-    padding: 150px;
-    width: 250;
-    border: 1px solid #ddd;
+    height: 300px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: 3px solid #ddd;
     border-radius: 8px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     width: 45%; /* Occupy less width so that the boxes can be better aligned */
 }
-
-.fee-box img, .process-box img {
-    width: 150px;
-    height: 150px;
-    margin: 10px 0;
+.process-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center;  /* Center text within elements */
+    height: 300px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: 3px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 45%; /* Occupy less width so that the boxes can be better aligned */
 }
-
-.fee-box h4, .process-box h4 {
+.venue-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center;  /* Center text within elements */
+    height: 300px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: 3px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 45%; /* Occupy less width so that the boxes can be better aligned */
+}
+.fee-box h4 {
     font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #00b3ff;
     margin-bottom: 10px; /* Space below heading */
     text-align: center; /* Center the heading text */
     width: 100%; /* Ensure heading takes full width of the box */
+    
+}
+.process-box h4 {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #00b3ff;
+    margin-bottom: 51px; /* Space below heading */
+    text-align: center; /* Center the heading text */
+    width: 100%; /* Ensure heading takes full width of the box */
+}
+.venue-box h4 {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #00b3ff;
+    margin-bottom: 5px; /* Space below heading */
+    text-align: center; /* Center the heading text */
+    width: 100%; /* Ensure heading takes full width of the box */
+    padding-top: 55px;
+} 
+.venue-box h2 {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #00b3ff;
+    margin-bottom: 5px; /* Space below heading */
+    text-align: center; /* Center the heading text */
+    width: 100%;
+}
+.venue-box h5 {
+    color: black;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.fee-box p {
+    font-size: 30px;
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    margin-top: 5px; /* Space above the "Scan to Pay/Register" text */
 }
 
-.fee-box p, .process-box p {
-    font-size: 18px;
+.process-box p {
+    font-size: 30px;
     color: red;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 500;
     margin-top: 10px; /* Space above the "Scan to Pay/Register" text */
+    font-weight: 600;
+}
+.venue-box p {
+    font-size: 16px;
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+}
+
+.fee-box img {
+    width: 150px;
+    height: 150px;
+    margin: 10px 0;
+}
+.process-box img {
+    width: 150px;
+    height: 150px;
+    margin: 10px 0;
 }
 
 .venue-box {
-    gap: 10px; /* Space between elements in venue box */
+    gap: 5px; /* Space between elements in venue box */
 }
 
 .map-marker {
@@ -290,39 +399,31 @@ nav a:hover {
     margin: 10px 0;
 }
 
-.map-marker img {
-    max-width: 100%;
-    height: auto;
-}
-
-.venue-details p {
-    margin: 5px 0;
-}
-
 .table-footer {
     font-family: sans-serif;
     margin: 0;
 }
 
-table {
+.table-footer table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px; /* Space below the table */
+    margin-bottom: 30px; /* Space below the table */
 }
 
-th, td {
+.table-footer th, td {
     border: 1px solid #ddd;
     padding: 10px;
-    text-align: left; /* Align text to the left by default */
+    
 }
 
-th {
+.table-footer th {
     background-color: #5cdffd; /* Light gray background for header */
     font-weight: bold;
+    text-align: center ;
 }
 
 /* Add alternating row background color for better readability */
-tr:nth-child(even) {
+.table-footer tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
@@ -344,6 +445,8 @@ footer {
     font-size: 15px;
     padding-top: 10px;
     padding-bottom: 2px;
+    text-align: justify;
+    padding-left: 8px;
 }
 
 .left-section, .middle-section, .right-section {
@@ -353,6 +456,17 @@ footer {
 .footer-logo {
     max-width: 1000px; /* Adjust logo size as needed */
     margin-bottom: 10px;
+}
+
+.get-directions {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ff9f4c;
+    padding-right: 10px;
+}
+
+.college-website {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffff7a;
 }
 
 .middle-section {
@@ -378,15 +492,352 @@ footer {
 }
 
 .right-section {
-    text-align: right; /* Align text to the right */
+    padding-left: 30px;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.right-section h3 {
+    margin-bottom: 15px;
+    text-decoration: underline;
+    
+}
+
+.right-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.right-section li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.right-section img {
+    height: 22px; /* Increased size slightly for better visibility */
+    margin-right: 10px; /* More spacing between icon and text */
 }
 
 .right-section a {
     color: lightblue;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.right-section .email-item {
+    display: flex;
+    align-items: center; /* Align icon and email in one line */
+}
+
+.right-section .email-item img {
+    flex-shrink: 0; /* Prevents the icon from resizing */
+}
+
+.right-section .email-item div {
+    display: flex;
+    flex-direction: column; /* Stack emails under the same icon */
+}
+.hero {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.content {
+    padding: 40px;
+   
+}
+
+.content h2 {
+    color: #003399;
+    
+    
+}
+
+.content p {
+    font-size: 1.1rem;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ 
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background: url('/Source/test_bg.jpg') no-repeat center center/cover;
+    display: flex;
+    text-align: center;
+    color: white;
+    padding-bottom: 70px;
+}  
+
+.committee-container {
+    padding: 50px;
+    max-width: 700px;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+.committee-title {
+    font-size: 36px;
+    font-weight: 700;
+
+}
+
+.sub-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.red {
+    color: #ff3b3b;
+}
+
+p {
+    font-size: 16px;
+    margin: 5px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Form Section  */
+.form { /* Your existing form styles */
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4baeff, #496de4);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 10vh;
+    width: 480px; /* Or 40% if you want it relative to container */
+    margin: 20px;
+    color: #333;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px; /* Increased gap for spacing */
+    align-items: start; /* Align to top */
+    padding: 25px; /* Padding from sides */
+    box-sizing: border-box; /* Include padding in width */
+    width: 100%; /* Ensure container takes full width */
+}
+
+
+.form-container {
+    background: rgba(121, 70, 232, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 400px; /* Or 100% if you want it to fill parent */
+    margin: 20px;
+}
+
+.form-wrapper {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form-header h2 {
+    color: #00acc7; /* Slightly darker heading color */
+}
+
+.form-header p {
+  color: #777;
+  font-size: 0.9em;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input,
+textarea {
+    width: calc(100% - 22px); /* Account for padding and border */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+input:focus,
+textarea:focus {
+    border-color: #667eea; /* Highlight border on focus */
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.3); /* Add a subtle focus shadow */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+.submit-btn {
+    background: linear-gradient(to right, #667eea, #764ba2); /* Gradient button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease; /* Smooth background transition */
+    width: 100%; /* Make button full width */
+}
+
+.submit-btn:hover {
+    background: linear-gradient(to right, #5a69d4, #684291); /* Slightly darker gradient on hover */
+}
+
+.thank-you {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.thank-you h2 {
+    color: #555;
+}
+
+.thank-you p {
+    color: #777;
+}
+
+/* Keynote Spearkers */
+.speakers {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.speakers table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Space below the table */
+}
+
+.speakers th, td {
+    border: 1px solid #ddd;
+    padding: 35px;
+    text-align: center;
+}
+
+.speakers th {
+    background-color: #5cdffd; /* Light gray background for header */
+    font-weight: bold;
+}
+
+/* Add alternating row background color for better readability */
+.speakers tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
 
 @keyframes blink {
     50% {
         opacity: 0;
+    }
+}
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin: auto;
+    padding: 20px;
+}
+
+#map-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map {
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Make it responsive */
+@media (max-width: 900px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #map {
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
     }
 }
