@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FDP JISCE</title>
+    <style>
+        #map-container {
+    display: flex;
+    align-items: flex-start; /* Align to top */
+    width: 100%;
+    /* Add this to make sure it takes full width available */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+#contact-form {
+    width: 45%; /* Slightly less than half to add some margin */
+    padding: 20px; /* Add some padding around the form */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+#map {
+    height: 400px; /* Or adjust as needed */
+    width: 100%; /* Map takes full width of its container */
+}
+
+      </style>
+      <script>
+        let map;
+      
+        function initMap() {
+          // Get the location (replace with your desired coordinates)
+          const location = { lat: 22.6757, lng: 88.3496 }; // Example: Kolkata coordinates
+      
+          map = new google.maps.Map(document.getElementById("map"), {
+            center: location,
+            zoom: 14, // Adjust zoom level as needed
+          });
+      
+          // Add a marker to the location
+          new google.maps.Marker({
+            position: location,
+            map: map,
+            title: "Kolkata" // Replace with your location name
+          });
+      
+              // Optional: Add an info window when marker is clicked
+              const infowindow = new google.maps.InfoWindow({
+                  content: "Kolkata" // Replace with your location name
+              });
+      
+              const marker = new google.maps.Marker({
+                  position: location,
+                  map: map,
+                  title: "Kolkata" // Replace with your location name
+              });
+      
+              marker.addListener("click", () => {
+                  infowindow.open({
+                      anchor: marker,
+                      map,
+                      shouldFocus: false,
+                  });
+              });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHd_7wy8viCPphQRIOZ_eWmLDSQ0w-O34&callback=console.debug&libraries=maps,marker&v=beta" async defer></script>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+    <section class="clg_bg">
+    <header>
+        <div class="top-bar">
+            <div class="contact-info">
+                <span>+91-000000</span>
+                <span class="email">jisxxxx@gmail.com</span>
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="/Source/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="/Source/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="/Source/twitter.png" alt="X"></a>
+                <a href="#"><img src="/Source/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="/Source/youtube.png" alt="YouTube"></a>
+            
+            </div>
+        </div>
+        <div class="header-content">
+            <img src="/Source/logo.png" alt="College Logo" class="college-logo">
+            <img src="/Source/jisgr.png" alt="JIS Logo" class="jis-logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/about.html">About Us</a></li>
+                <li><a href="/pages/organizers.html">Organizers</a></li>
+                <li><a href="/pages/keynotespeakers.html">Keynote Speakers</a></li>
+                <li><a href="comingsoon.html">Gallery</a></li>
+                <li><a href="/pages/contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    </section>
+
+    <div id="container">  <div id="form-area">  <div class="form-container">
+        <div class="form-wrapper">
+            <div class="form-header">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you!</p>
+            </div>
+            <form id="contactForm">
+                <div class="input-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email ID:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+            <div id="thank-you" class="thank-you">
+                <h2>Thank you for reaching out!</h2>
+                <p>We appreciate your message and will get back to you soon.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="map-area">  <div id="map">
+        <gmp-map center="22.95979118347168,88.44770050048828" zoom="14" map-id="DEMO_MAP_ID">
+            <gmp-advanced-marker position="22.95979118347168,88.44770050048828" title="My location"></gmp-advanced-marker>
+        </gmp-map>
+    </div>
+</div>
+</div>
+
+
+        <footer>
+            <div class="footer-content">
+                <div class="left-section">
+                    <img src="/Source/logo.png" alt="College Logo" class="footer-logo">
+                    <p>
+                        JIS COLLEGE OF ENGINEERING<br>
+                        Block A, Phase III,<br>
+                        Kalyani, Nadia-741235, West Bengal. <br>
+                        <a class="get-directions" href="https://maps.app.goo.gl/y2MG3dxVAc9Z2STR7">Get Directions</a>
+                        <a class="college-website" href="https://www.jiscollege.ac.in/">College Website</a>
+                    </p>
+                </div>
+                <div class="middle-section">
+                    <h3><u>Quick Links</u></h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/pages/about.html">About Us</a></li>
+                        <li><a href="/pages/organizers.html">Organizers</a></li>
+                        <li><a href="/pages/gallery.html">Gallery</a></li>
+                        <li><a href="/pages/contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="right-section">
+                    <h3><u>Contact</u></h3>
+                    <ul>
+                        <li>
+                            <img class="call-logo" src="/Source/call.png" alt=""> 
+                            +918370427934 / +919433617802
+                        </li>
+                        <li class="email-item">
+                            <img class="mail-logo" src="/Source/communication.png" alt="">
+                            <div>
+                                <a href="mailto:sitanath.biswas@jiscollege.ac.in">sitanath.biswas@jiscollege.ac.in</a>
+                                <a href="mailto:sayan.chakraborty@jiscollege.ac.in">sayan.chakraborty@jiscollege.ac.in</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script> 
+
+</body>
+</html>
